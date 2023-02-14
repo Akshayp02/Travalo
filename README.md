@@ -1,2 +1,2 @@
 # Travalo
-This is  Travalo Webapp Developed by using Django. 
+This Repository Contains The Travalo Webapp Developed by using Django. 
