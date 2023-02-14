@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<body>
+    <form action="register" method="POST">
+        {% csrf_token %}
+        <br><input type="text" name="first_name" placeholder="First Name"><br>
+        <br><input type="text" name="last_name" placeholder="Last Name"><br>
+        <br><input type="text" name="username" placeholder="UserName"><br>
+       <br> <input type="email" name="email" placeholder="email"><br>
+        <br><input type="password" name="password1" placeholder="password1"><br>
+        <br><input type="password" name="password2" placeholder="password2"><br>
+        <br><input type="submit"><br>
+
+
+    </form>
+    <div>
+        {% for msg in messages %}
+        {{msg}}
+        {% endfor %}
+    </div>
+
+</body>
+</html>
